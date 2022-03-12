@@ -1,25 +1,21 @@
-import React from "react";
+import React, {useState} from 'react';
 import { SearchFilter } from "./SearchFilter";
 
-class Search extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            search: 'naruto',
-        };
+function Search (props) {
 
-    }
+    const {searchMovies} = props;
+    const [search, setSearch] = useState('naruto');
 
-    handleKey = (event) => {
+    const handleKey = (event) => {
         if (event.key === 'Enter') {
-            this.props.searchMovies(this.state.search,'');
+            searchMovies(search,'');
         }
     }
-    handleClick = () => {
-        this.props.searchMovies(this.state.search,'');
+
+    const handleClick = () => {
+        searchMovies(search,'');
     }
 
-    render() {
         return <div className="row">
             <div className="col s12">
                 <div className="input-field">
@@ -28,16 +24,15 @@ class Search extends React.Component {
                         type="search"
                         className="validate"
                         placeholder="Search"
-                        value={this.state.search}
-                        onChange={(e) => { this.setState({ search: e.target.value }) }}
-                        onKeyDown={this.handleKey}
+                        value={search}
+                        onChange={(e) => { setSearch(e.target.value)}}
+                        onKeyDown={handleKey}
                     />
-                    <button className="btn search-btn" onClick={this.handleClick} >Search
+                    <button className="btn search-btn" onClick={handleClick} >Search
                     </button>
                 </div>
-                <SearchFilter searchMovies={this.props.searchMovies} search={this.state.search} />
+                <SearchFilter searchMovies={searchMovies} search={search} />
             </div>
         </div>
-    }
 }
 export { Search }

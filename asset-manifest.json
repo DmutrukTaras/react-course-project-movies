@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-course-project-movies/static/css/main.58da1da1.css",
+    "main.js": "/react-course-project-movies/static/js/main.64d880ee.js",
+    "index.html": "/react-course-project-movies/index.html",
+    "main.58da1da1.css.map": "/react-course-project-movies/static/css/main.58da1da1.css.map",
+    "main.64d880ee.js.map": "/react-course-project-movies/static/js/main.64d880ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58da1da1.css",
+    "static/js/main.64d880ee.js"
+  ]
+}

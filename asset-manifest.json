@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-course-project-movies/static/css/main.58da1da1.css",
-    "main.js": "/react-course-project-movies/static/js/main.b3287f0e.js",
+    "main.js": "/react-course-project-movies/static/js/main.f6fa781b.js",
     "index.html": "/react-course-project-movies/index.html",
     "main.58da1da1.css.map": "/react-course-project-movies/static/css/main.58da1da1.css.map",
-    "main.b3287f0e.js.map": "/react-course-project-movies/static/js/main.b3287f0e.js.map"
+    "main.f6fa781b.js.map": "/react-course-project-movies/static/js/main.f6fa781b.js.map"
   },
   "entrypoints": [
     "static/css/main.58da1da1.css",
-    "static/js/main.b3287f0e.js"
+    "static/js/main.f6fa781b.js"
   ]
 }
